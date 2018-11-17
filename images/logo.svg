@@ -6,7 +6,7 @@
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="logo" transform="translate(0.000000, -8.000000)">
             <g id="Group">
-                <path d="M38.936,8 L4.704,8 C2.117,8 0,10.116 0,12.703 L0,43.97 L0,47.106 L0,51.81 L4.704,51.81 L7.84,51.81 L38.937,51.81 C41.524,51.81 43.641,49.693 43.641,47.106 L43.641,12.703 C43.64,10.116 41.523,8 38.936,8 Z" id="Path" fill="#143448"></path>
+                <path d="M38.936,8 L4.704,8 C2.117,8 0,10.116 0,12.703 L0,43.97 L0,47.106 L0,51.81 L4.704,51.81 L7.84,51.81 L38.937,51.81 C41.524,51.81 43.641,49.693 43.641,47.106 L43.641,12.703 C43.64,10.116 41.523,8 38.936,8 Z" id="Path" fill="#4DB0F7"></path>
                 <text id="K" font-family="Arial-Black, Arial Black" font-size="41" font-weight="700" fill="#FFFFFF">
                     <tspan x="4" y="45">K</tspan>
                 </text>
