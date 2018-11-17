@@ -591,7 +591,7 @@ form,
 
 #loader > div {
   content: "";
-  background: #5b4f96;
+  background: #4DB0F7;
   width: 6px;
   height: 6px;
   position: absolute;
@@ -1007,8 +1007,8 @@ button.btn--primary,
 input[type="submit"].btn--primary,
 input[type="reset"].btn--primary,
 input[type="button"].btn--primary {
-  background: #5b4f96;
-  border-color: #5b4f96;
+  background: #143448;
+  border-color: #143448;
   color: #ffffff;
 }
 
@@ -1022,8 +1022,8 @@ button.btn--primary:focus,
 input[type="submit"].btn--primary:focus,
 input[type="reset"].btn--primary:focus,
 input[type="button"].btn--primary:focus {
-  background: #514686;
-  border-color: #514686;
+  background: #4DB0F7;
+  border-color: #4DB0F7;
 }
 
 /* button modifiers
@@ -2103,7 +2103,7 @@ input::-moz-focus-inner {
   content: "";
   height: 2px;
   width: 8rem;
-  background-color: #5b4f96;
+  background-color: #4DB0F7;
   position: absolute;
   left: 8px;
   top: 0;
@@ -2219,7 +2219,7 @@ input::-moz-focus-inner {
   line-height: 5.6rem;
   text-transform: uppercase;
   letter-spacing: .3rem;
-  color: #5b4f96;
+  color: #4DB0F7;
   border-bottom: 1px solid transparent;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -2641,7 +2641,8 @@ html.no-csstransitions .home-content__main {
 .s-about {
   padding-top: 23.2rem;
   padding-bottom: calc((62.4rem/2) + 6.4rem);
-  background-color: #5b4f96;
+  background-color: #143448;
+  /*background-color: #4DB0F7;*/
   color: rgba(255, 255, 255, 0.8);
   overflow: hidden;
   position: relative;
@@ -2673,12 +2674,12 @@ html.no-csstransitions .home-content__main {
 }
 
 .about-desc__slider .slick-dots li button {
-  background: #433a6e;
+  background: lightgray;
 }
 
 .about-desc__slider .slick-dots li.slick-active button,
 .about-desc__slider .slick-dots li:hover button {
-  background: #ffffff;
+  background: #4DB0F7;
 }
 
 .about-desc__slide {
@@ -3177,7 +3178,7 @@ html.no-csstransitions .home-content__main {
 }
 
 .item-feature__icon {
-  color: #5b4f96;
+  color: #4DB0F7;
   font-size: 4.8rem;
 }
 
@@ -3596,7 +3597,7 @@ html.no-csstransitions .home-content__main {
  * ------------------------------------------------------------------- */
 .s-download {
   padding-top: 18.4rem;
-  background-color: #5b4f96;
+  background-color: #143448;
   color: rgba(255, 255, 255, 0.8);
   overflow: hidden;
   position: relative;
@@ -3740,7 +3741,7 @@ html.no-csstransitions .home-content__main {
 
 .s-footer .footer__mail-link {
   font-weight: 800;
-  color: #5b4f96;
+  color: #4DB0F7;
 }
 
 .s-footer .footer__mail-link:hover,
@@ -3919,7 +3920,7 @@ html.no-csstransitions .home-content__main {
 .footer__site-links li a:hover,
 .footer__site-links li a:focus,
 .footer__site-links li a:active {
-  color: #5b4f96;
+  color: #4DB0F7;
 }
 
 
