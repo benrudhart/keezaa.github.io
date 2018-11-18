@@ -2139,8 +2139,8 @@ input::-moz-focus-inner {
 }
 
 .home-content__right img {
-  vertical-align: bottom;
-  margin-top: -5.2rem;
+  /*vertical-align: bottom;/*
+  margin-top: -5.2rem;*/
 }
 
 
