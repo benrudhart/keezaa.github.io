@@ -2639,8 +2639,8 @@ html.no-csstransitions .home-content__main {
  *
  * ------------------------------------------------------------------- */
 .s-about {
-  padding-top: 23.2rem;
-  padding-bottom: calc((62.4rem/2) + 6.4rem);
+  padding-top: 10em;
+  padding-bottom: 6em;
   background-image: linear-gradient(to bottom right, #143448, #1F577B);
   color: rgba(255, 255, 255, 0.8);
   overflow: hidden;
@@ -2692,7 +2692,7 @@ html.no-csstransitions .home-content__main {
  * ------------------------------------------------------------------- */
 @media only screen and (max-width:1400px) {
   .s-about {
-    padding-bottom: calc((62.4rem/2) + 9.6rem);
+    /*padding-bottom: calc((62.4rem/2) + 9.6rem);*/
   }
 
 }
