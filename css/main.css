@@ -3177,8 +3177,12 @@ html.no-csstransitions .home-content__main {
 }
 
 .item-feature__icon {
-  color: #4DB0F7;
   font-size: 4.8rem;
+  color: #4DB0F7;
+  background: -webkit-linear-gradient(#4DB0F7, #143448);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
 }
 
 
