@@ -540,7 +540,7 @@ form,
 
 .pace .pace-progress {
   z-index: 900;
-  background: #5b4f96;
+  background: #4DB0F7;
   width: 100%;
   height: 4px;
   position: fixed;
@@ -3983,7 +3983,7 @@ html.no-csstransitions .home-content__main {
 .go-top a:hover,
 .go-top a:focus,
 .go-top a:active {
-  background-color: #514686;
+  background-color: #4DB0F7;
 }
 
 .go-top.link-is-visible {
