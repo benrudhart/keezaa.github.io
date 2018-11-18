@@ -3725,7 +3725,7 @@ html.no-csstransitions .home-content__main {
 .s-footer a:hover,
 .s-footer a:focus,
 .s-footer a:active {
-  color: #5b4f96;
+  color: #4DB0F7;
 }
 
 .s-footer .display-1 {
@@ -3742,21 +3742,10 @@ html.no-csstransitions .home-content__main {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.s-footer .footer__mail-link {
-  font-weight: 800;
-  color: #4DB0F7;
-}
-
-.s-footer .footer__mail-link:hover,
-.s-footer .footer__mail-link:focus,
-.s-footer .footer__mail-link:active {
-  color: #ffffff;
-}
-
 .footer__bottom {
   margin-top: 1.6rem;
   padding-top: 3.9rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.03);
+  /*border-top: 1px solid rgba(255, 255, 255, 0.03);*/
 }
 
 
