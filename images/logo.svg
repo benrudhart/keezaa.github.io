@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="216px" height="44px" viewBox="0 0 216 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="168px" height="32px" viewBox="0 0 168 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
     <title>logo</title>
     <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="50%" cy="50%" fx="50%" fy="50%" r="50%" id="radialGradient-1">
+            <stop stop-color="#0077C1" offset="0%"></stop>
+            <stop stop-color="#00365A" offset="100%"></stop>
+        </radialGradient>
+    </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="logo" transform="translate(0.000000, -8.000000)">
-            <g id="Group">
-                <path d="M38.936,8 L4.704,8 C2.117,8 0,10.116 0,12.703 L0,43.97 L0,47.106 L0,51.81 L4.704,51.81 L7.84,51.81 L38.937,51.81 C41.524,51.81 43.641,49.693 43.641,47.106 L43.641,12.703 C43.64,10.116 41.523,8 38.936,8 Z" id="Path" fill="#4DB0F7"></path>
-                <text id="K" font-family="Arial-Black, Arial Black" font-size="41" font-weight="700" fill="#FFFFFF">
-                    <tspan x="4" y="45">K</tspan>
-                </text>
-            </g>
-            <text id="Keezaa" font-family="Arial-Black, Arial Black" font-size="41" font-weight="700" fill="#FFFFFF">
-                <tspan x="53" y="45">Keezaa</tspan>
+        <g id="logo" transform="translate(0.000000, -11.000000)">
+            <text id="Keezaa" font-family="NunitoSans-SemiBold, Nunito Sans" font-size="41" font-weight="500" fill="#FFFFFF">
+                <tspan x="37" y="41">Keezaa</tspan>
             </text>
+            <g id="Group-2" transform="translate(0.000000, 11.000000)">
+                <rect id="Background" fill="#FFFFFF" x="0" y="0" width="32" height="32" rx="16"></rect>
+                <circle id="outer-circle" fill="url(#radialGradient-1)" cx="16" cy="16" r="13.1764706"></circle>
+                <circle id="inner-point" stroke="#FFFFFF" stroke-width="3" fill="#FFFFFF" cx="16" cy="16" r="2.82352941"></circle>
+            </g>
         </g>
     </g>
 </svg>
