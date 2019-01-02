@@ -2450,7 +2450,7 @@ html.no-csstransitions .home-content__main {
   }
 
   .home-content br {
-    display: none;
+    /*display: none;*/ /*disable linebreaks on mobile*/
   }
 
   .home-content h1 {
