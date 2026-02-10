@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html class="no-js" lang="de">
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Empfehlungscode | Keezaa</title>
+    <meta name="description" content="Keezaa Seite für Empfehlungscode und Belohnung">
+    <meta name="author" content="Keezaa">
+    <meta name="robots" content="noindex, nofollow, noarchive">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <style type="text/css" media="screen">
+        body {
+            background: #070a12;
+            color: #e9edf2;
+        }
+
+        .s-referral {
+            background-color: #070a12;
+            padding-top: 11rem;
+            padding-bottom: 5.6rem;
+            min-height: 100vh;
+        }
+
+        .s-referral .lead {
+            margin-bottom: 0;
+            color: #aeb6c4;
+        }
+
+        .referral-main-title {
+            margin: 0 0 1.2rem 0;
+            color: #f3f6fb;
+            font-size: 3.2rem;
+            line-height: 1.2;
+        }
+
+        .is-hidden {
+            display: none !important;
+        }
+
+        .referral-invalid-message {
+            max-width: 72rem;
+            font-size: 2.2rem;
+            line-height: 1.45;
+            margin: 0;
+            color: #f3f6fb;
+        }
+
+        .referral-code {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 0.1rem;
+            margin-bottom: 2.2rem;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .referral-code__char {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 5.6rem;
+            height: 5.6rem;
+            border-radius: 1.2rem;
+            border: 1px solid #242a36;
+            background: #11151d;
+            color: #e9edf2;
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+            font-size: 3.6rem;
+            line-height: 1;
+            font-weight: 700;
+            letter-spacing: 0.02em;
+        }
+
+        .referral-code.is-copied .referral-code__char {
+            border-color: #2f9e62;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .s-referral {
+                padding-top: 9.6rem;
+                padding-bottom: 4rem;
+            }
+
+            .referral-code__char {
+                width: 4.8rem;
+                height: 4.8rem;
+                font-size: 3rem;
+            }
+
+            .reward-download .store-badge-link,
+            .claim-open-btn {
+                width: 100% !important;
+                max-width: 100%;
+            }
+
+            .reward-download .store-badge-link {
+                height: auto !important;
+            }
+
+            .reward-download .store-badge-image {
+                width: 100% !important;
+                height: auto !important;
+                max-width: 100%;
+            }
+
+        }
+
+        .reward-card {
+            border: 1px solid #242a36;
+            border-radius: 12px;
+            padding: 1.8rem 2rem;
+            margin-top: 0;
+            background: #11151d;
+        }
+
+        .reward-card h3 {
+            margin-top: 0.8rem;
+            margin-bottom: 0;
+            color: #f3f6fb;
+        }
+
+        .reward-card p {
+            margin-bottom: 0.6rem;
+            color: #d1d7e2;
+        }
+
+        .reward-download {
+            margin-top: 1rem;
+        }
+
+        .store-badge-link {
+            display: inline-block;
+            overflow: hidden;
+            border-radius: 13px;
+            width: 250px;
+            height: 83px;
+        }
+
+        .store-badge-image {
+            display: block;
+            border-radius: 13px;
+            width: 250px;
+            height: 83px;
+        }
+
+        .claim-steps {
+            margin-top: 1.1rem;
+            padding-top: 0.4rem;
+        }
+
+        .claim-steps__title {
+            margin-bottom: 1.2rem;
+            color: #f3f6fb;
+        }
+
+        .claim-step {
+            margin-bottom: 1.8rem;
+        }
+
+        .claim-step h3 {
+            color: #d1d7e2;
+            margin: 0 0 0.8rem 0;
+            font-size: 2.2rem;
+        }
+
+        .claim-open-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 1.6rem;
+            width: 250px;
+            height: 83px;
+            border-radius: 13px;
+            border: 2px solid #9ea5b0;
+            background: #000000;
+            color: #ffffff;
+            text-decoration: none;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+            padding: 0 1.6rem;
+            line-height: 1.1;
+        }
+
+        .claim-open-btn:hover,
+        .claim-open-btn:focus {
+            border-color: #b8bec8;
+            background: #0d1018;
+            color: #ffffff;
+        }
+
+        .claim-platform-note {
+            margin: 0 0 1rem 0;
+            max-width: 46rem;
+            color: #aeb6c4;
+            font-size: 1.9rem;
+            line-height: 1.4;
+        }
+
+        .claim-open-btn__icon {
+            width: 3.9rem;
+            height: 3.9rem;
+            border-radius: 0.9rem;
+            flex: 0 0 auto;
+        }
+
+        .claim-open-btn__text {
+            color: #ffffff;
+        }
+
+        .claim-open-btn__text-main {
+            font-size: 3.4rem;
+            font-weight: 400;
+            letter-spacing: -0.02em;
+        }
+
+        .visually-hidden {
+            position: absolute !important;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0;
+            white-space: nowrap;
+        }
+    </style>
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+
+<body id="top">
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="dots-jump">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+        <div class="row">
+            <div class="header-logo">
+                <a class="site-logo" href="index.html">
+                    <img src="images/logo.svg" alt="Keezaa Startseite">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- referral content
+    ================================================== -->
+    <section class="s-referral">
+        <div class="row narrow section-intro">
+            <h1 class="referral-main-title">Keezaa - Die Kieser-Training App</h1>
+            <div id="referral-valid-view" class="is-hidden">
+                <p class="lead">Dein Empfehlungscode</p>
+                <h2 class="referral-code" id="referral-code"></h2>
+                <p class="visually-hidden" id="referral-copy-feedback" aria-live="polite"></p>
+
+                <div class="reward-card">
+                    <p>Dein Geschenk:</p>
+                    <h3>Nutze die App zwei Monate kostenlos 🎁</h3>
+                </div>
+
+                <section class="claim-steps" aria-label="Belohnung einlösen">
+                    <h3 class="claim-steps__title">So löst du die Belohnung ein</h3>
+
+                    <div class="claim-step">
+                        <h3 id="claim-step-1-title">1. App herunterladen</h3>
+                        <p class="claim-platform-note is-hidden" id="claim-platform-note">Sorry - die Keezaa App ist exklusiv für iPhone & Apple Watch entwickelt. Bitte öffne dies auf einem iPhone.</p>
+                        <div class="reward-download">
+                            <a class="store-badge-link" href="https://apps.apple.com/app/id1337707625?itsct=apps_box_badge&amp;itscg=30200"><img class="store-badge-image" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/de-de?size=250x83&amp;releaseDate=1528934400" alt="Download im App Store"></a>
+                        </div>
+                    </div>
+
+                    <div class="claim-step" id="claim-step-2-wrap">
+                        <h3 id="claim-step-2-title">2. Tippe hier, um die App zu öffnen</h3>
+                        <a class="claim-open-btn is-hidden" id="claim-code-link" href="https://keezaa.app/claim-code/?code=UNBEKANNT">
+                            <img class="claim-open-btn__icon" src="images/logo.svg" alt="" aria-hidden="true">
+                            <span class="claim-open-btn__text">
+                                <span class="claim-open-btn__text-main">App öffnen</span>
+                            </span>
+                        </a>
+                    </div>
+                </section>
+            </div>
+
+            <p class="referral-invalid-message" id="referral-invalid-message">
+                Dein Empfehlungscode konnte leider nicht erkannt werden. Bitte frage die Person, die dich geworben hat, nach einem neuen Link.
+            </p>
+        </div>
+    </section>
+
+    <!-- footer
+    ================================================== -->
+    <footer class="s-footer footer">
+        <div class="row footer__bottom">
+            <div class="col-full ss-copyright">
+                <span>&copy; Copyright Keezaa 2026</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/referral.js"></script>
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
