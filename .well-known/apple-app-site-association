@@ -1,0 +1,14 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "ZRTM7GATT7.com.benrudhart.keeza",
+        "paths": [
+          "/claim-code",
+          "/claim-code/*"
+        ]
+      }
+    ]
+  }
+}
