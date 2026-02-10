@@ -278,25 +278,25 @@
     ================================================== -->
     <section class="s-referral">
         <div class="row narrow section-intro">
-            <h1 class="referral-main-title">Keezaa - Die Kieser-Training App</h1>
+            <h1 class="referral-main-title" id="referral-main-title">Keezaa - Die Kieser-Training App</h1>
             <div id="referral-valid-view" class="is-hidden">
-                <p class="lead">Dein Empfehlungscode</p>
+                <p class="lead" id="referral-code-lead">Dein Empfehlungscode</p>
                 <h2 class="referral-code" id="referral-code"></h2>
                 <p class="visually-hidden" id="referral-copy-feedback" aria-live="polite"></p>
 
                 <div class="reward-card">
-                    <p>Dein Geschenk:</p>
-                    <h3>Nutze die App zwei Monate kostenlos 🎁</h3>
+                    <p id="reward-intro-text">Dein Geschenk:</p>
+                    <h3 id="reward-title">Nutze die App zwei Monate kostenlos 🎁</h3>
                 </div>
 
-                <section class="claim-steps" aria-label="Belohnung einlösen">
-                    <h3 class="claim-steps__title">So löst du die Belohnung ein</h3>
+                <section class="claim-steps" id="claim-steps-section" aria-label="Belohnung einlösen">
+                    <h3 class="claim-steps__title" id="claim-steps-title">So löst du die Belohnung ein</h3>
 
                     <div class="claim-step">
                         <h3 id="claim-step-1-title">1. App herunterladen</h3>
                         <p class="claim-platform-note is-hidden" id="claim-platform-note">Sorry - die Keezaa App ist exklusiv für iPhone & Apple Watch entwickelt. Bitte öffne dies auf einem iPhone.</p>
                         <div class="reward-download">
-                            <a class="store-badge-link" href="https://apps.apple.com/app/id1337707625?itsct=apps_box_badge&amp;itscg=30200"><img class="store-badge-image" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/de-de?size=250x83&amp;releaseDate=1528934400" alt="Download im App Store"></a>
+                            <a class="store-badge-link" href="https://apps.apple.com/app/id1337707625?itsct=apps_box_badge&amp;itscg=30200"><img class="store-badge-image" id="referral-store-badge-img" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/de-de?size=250x83&amp;releaseDate=1528934400" alt="Download im App Store"></a>
                         </div>
                     </div>
 
@@ -305,7 +305,7 @@
                         <a class="claim-open-btn is-hidden" id="claim-code-link" href="https://keezaa.app/claim-code/?code=UNBEKANNT">
                             <img class="claim-open-btn__icon" src="images/logo.svg" alt="" aria-hidden="true">
                             <span class="claim-open-btn__text">
-                                <span class="claim-open-btn__text-main">App öffnen</span>
+                                <span class="claim-open-btn__text-main" id="claim-open-button-text">App öffnen</span>
                             </span>
                         </a>
                     </div>
@@ -328,6 +328,7 @@
         </div>
     </footer>
 
+    <script src="js/i18n.js"></script>
     <script src="js/referral.js"></script>
 
     <!-- Java Script
