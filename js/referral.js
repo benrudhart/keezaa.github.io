@@ -192,7 +192,7 @@
     function applyClaimLink(code) {
         var claimCodeLink = document.getElementById("claim-code-link");
         if (claimCodeLink) {
-            claimCodeLink.href = "https://keezaa.app/claim-code/?code=" + encodeURIComponent(code);
+            claimCodeLink.href = "keezaa://claim-code?code=" + encodeURIComponent(code) + "&type=referral";
         }
     }
 
